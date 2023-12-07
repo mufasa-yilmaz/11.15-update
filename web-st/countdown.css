@@ -120,3 +120,64 @@ a:hover {
     --primary-color:rgb(71, 70, 70);
     --secondary-color:#0e0202;
 }
+/*dropdown-menu*/
+.menu {  
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    right: 2%;
+    padding: 1%;
+    z-index: 1000; /*navbar öğesinin diğer sayfadaki öğelerin üzerine çıkmasını sağlar.*/
+    
+    width: 29%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 1%;}
+
+.menu a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+    transition: color 0.4s;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.menu a:hover, .dropdown:hover .dropbtn {
+    color: #553ff0;
+}
+
+.menu .dropdown {
+    display: inline-block;
+}
+
+.menu .dropdown-content {
+    display: none;
+    position: fixed;
+    color: #553ff0;
+    z-index: 1;
+}
+
+.menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu .dropdown-content a:hover {
+    color: #553ff0;
+}
+
+.menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
